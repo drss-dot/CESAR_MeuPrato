@@ -67,11 +67,52 @@ if (escolha_usuario == 1):
         print("ERRO: Selecione uma opção válida!")
         
 # ---------------------------------------------------------------------------
-     
-      
-elif (escolha_usuario == 2):
-    print(aves)
+# ------------------------------ AVES ------------------------------
+
+if (escolha_usuario == 2):
     
+    print("1 - Com osso")
+    print("2 - Sem osso")
+    print("3 - Ambos")
+    escolha1_ave = int(input("Você gosta de aves com osso ou sem osso?"))
+    
+    if (escolha1_ave == 1):
+        print("1 - Com molho")
+        print("2 - Sem molho")
+        print("3 - Ambos")
+        escolha2_ave = int(input("Você prefere a aves ao molho sem molho?"))
+        
+        if (escolha2_ave == 1):
+            print("A escolha perfeita pra você é: " + carne_vermelha[2])
+        elif (escolha2_ave == 2):
+            print("A escolha perfeita pra você é: " + carne_vermelha[1])
+        elif (escolha2_ave == 3):
+            print("Temos duas opções que cabem no seu gosto: " + carne_vermelha[1] + " e " + carne_vermelha[2])
+        else: 
+            print("ERRO: Selecione uma opção válida!")
+        
+    elif (escolha1_ave == 2):
+        print("O prato perfeito pra você hoje é: " + aves[0])
+            
+    elif (escolha1_ave == 3):
+        print("1 - Comum/cotidiana")
+        print("2 - Festiva/sofisticada")
+        print("3 - Ambos")
+        escolha2_ave = int(input("Qual ocasião do dia?"))
+        
+        if (escolha2_ave == 1):
+            print("A escolha perfeita pra você é: " + carne_vermelha[0])
+        elif (escolha2_ave == 2):
+            print("Temos duas opções que cabem no seu gosto: " + carne_vermelha[1] + " e " + carne_vermelha[2])
+        elif (escolha2_ave == 3):
+            print("Temos três opções que cabem no seu gosto: " + carne_vermelha[0] + ", " + carne_vermelha[1] + " e " + carne_vermelha[2])  
+        else: 
+            print("ERRO: Selecione uma opção válida!")    
+    
+    else:
+        print("ERRO: Selecione uma opção válida!")
+        
+# ---------------------------------------------------------------------------        
     
     
 elif (escolha_usuario == 3):
